@@ -1,0 +1,37 @@
+{
+  "name": "blockchat",
+  "version": "2.0.0",
+  "description": "Blockchain-based E2E encrypted messaging — security-hardened backend",
+  "main": "server/server.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "node": "hardhat node",
+    "server": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@pinata/sdk": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "express": "^5.0.1",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.0",
+    "nodemon": "^3.1.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "chai": "^4.4.1"
+  }
+}
